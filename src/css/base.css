@@ -20,8 +20,11 @@ ul {
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
+}
+
+.section {
+  background-color: #fafafa;
 }
 
 .button {
@@ -30,6 +33,7 @@ a {
   padding: 0;
   cursor: pointer;
   text-align: center;
+  background-color: #fff;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -43,6 +47,7 @@ img {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
 .container {

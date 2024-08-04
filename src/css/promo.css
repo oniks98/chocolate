@@ -1,0 +1,84 @@
+.promo {
+  padding-top: 395px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  max-width: 335px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0.4) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url('../img/promo/chocolate_main@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .promo {
+    background-image: (
+        180deg,
+        rgba(17, 17, 17, 0.4) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url('../img/promo/chocolate_main@2x.jpg');
+  }
+}
+
+.promo-container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.promo-btn_buy {
+  font-weight: 600;
+  color: #fff;
+  background-color: #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 120px;
+  height: 41px;
+}
+
+.promo-btn_buy:hover,
+.promo-btn_buy:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+}
+
+.promo-btn_made {
+  font-weight: 600;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 159px;
+  height: 41px;
+  background-color: transparent;
+}
+
+.promo-block_btn {
+  display: flex;
+  gap: 14px;
+}
+
+.promo-btn_made:hover,
+.promo-btn_made:focus {
+  color: #fd9222;
+  background-color: #fcf1e0;
+  border: 1px solid #fd9222;
+}
