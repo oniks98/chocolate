@@ -49,10 +49,20 @@
   justify-content: center;
 }
 
-.header-icon_menu {
+/* Для обводки hover i focus не діє */
+/* .header-icon_menu {
   fill: transparent;
   stroke-width: 2px;
   stroke: #111;
+} */
+
+.header-icon_menu {
+  fill: #111;
+}
+
+.header-icon_menu:hover,
+.header-icon_menu:focus {
+  fill: #fd9222;
 }
 
 @media screen and (min-width: 768px) {
