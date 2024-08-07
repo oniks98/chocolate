@@ -1,8 +1,8 @@
 .benefit {
+  padding-top: 20px;
+  padding-bottom: 20px;
   max-width: 375px;
-  padding: 20px;
   background-color: #1e1823;
-  margin: 0 auto;
 }
 
 .benefit-title {
@@ -21,7 +21,15 @@
 .benefit-list {
   display: flex;
   flex-direction: column;
-  gap: 38px;
+  gap: 20px;
+}
+
+.benefit-item_taste {
+  padding-bottom: 18px;
+}
+
+.benefit-item_tool {
+  padding-bottom: 16px;
 }
 
 .benefit-box_icon {
@@ -57,22 +65,74 @@
 @media screen and (min-width: 768px) {
   .benefit {
     max-width: 768px;
-    padding: 50px 32px 85px;
-    background-color: #1e1823;
-    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .benefit-list {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 88px;
-    row-gap: 62px;
+    row-gap: 44px;
+  }
+
+  .benefit-item_tool {
+    padding-bottom: 35px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .benefit {
     max-width: 1200px;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
+
+  .benefit-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .benefit-item_tool {
+    padding-bottom: 30px;
+  }
+
+  .benefit-text_descr {
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+  }
+
+  .benefit-list {
+    gap: 88px;
+  }
+
+  .benefit-item {
+    position: relative;
+  }
+
+  .benefit-item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 124px;
+    height: 0px;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: 290px;
+  }
+
+  /* 
+  Або так:
+
+  .benefit-item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: -44px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+*/
 }
