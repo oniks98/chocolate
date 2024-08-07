@@ -1,0 +1,138 @@
+.benefit {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 375px;
+  background-color: #1e1823;
+}
+
+.benefit-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefit-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefit-item_taste {
+  padding-bottom: 18px;
+}
+
+.benefit-item_tool {
+  padding-bottom: 16px;
+}
+
+.benefit-box_icon {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-icon {
+  fill: #fd9222;
+}
+
+.benefit-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.benefit-text_descr {
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 308px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefit {
+    max-width: 768px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .benefit-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 88px;
+    row-gap: 44px;
+  }
+
+  .benefit-item_tool {
+    padding-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefit {
+    max-width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .benefit-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .benefit-item_tool {
+    padding-bottom: 30px;
+  }
+
+  .benefit-text_descr {
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+  }
+
+  .benefit-list {
+    gap: 88px;
+  }
+
+  .benefit-item {
+    position: relative;
+  }
+
+  .benefit-item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 124px;
+    height: 0px;
+    transform: rotate(-90deg);
+    top: 50%;
+    left: 290px;
+  }
+
+  /* 
+  Або так:
+
+  .benefit-item:not(:last-child):after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: -44px;
+    bottom: 50%;
+    transform: translateY(50%);
+  }
+*/
+}

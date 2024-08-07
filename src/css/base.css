@@ -9,10 +9,6 @@ p {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -20,8 +16,27 @@ ul {
 }
 
 a {
-  color: currentColor;
   text-decoration: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.section {
+  background-color: #fafafa;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
 }
 
 .button {
@@ -30,6 +45,7 @@ a {
   padding: 0;
   cursor: pointer;
   text-align: center;
+  background-color: #fff;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -41,18 +57,19 @@ img {
   height: auto;
 }
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+.container {
+  max-width: 335px;
+  margin: 0 auto;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+  }
 }
