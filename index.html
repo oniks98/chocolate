@@ -4,20 +4,286 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     
     <script type="module" crossorigin src="/chocolate/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/chocolate/assets/index-315b6784.css">
+    <link rel="stylesheet" href="/chocolate/assets/index-8b323936.css">
   </head>
 
   <body>
-    <header class="header"></header>
+    <header class="section header">
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a href="./index.html" class="header-logo_link" target="_blank">
+        <span class="header-logo_name">Simply</span>Chocolate
+        <span class="header-logo_icon">
+          <svg class="header-icon_chocolate" width="21" height="21">
+            <use href="/chocolate/assets/icons-5aa57417.svg#icon_chocolate"></use>
+          </svg>
+        </span>
+      </a>
+      <ul class="header-list_page">
+        <li class="header-item_page">
+          <a href="./index.html" class="header-link_page">Home</a>
+        </li>
+        <li class="header-item_page">
+          <a href="./index.html" class="header-link_page">How it’s made?</a>
+        </li>
+        <li class="header-item_page">
+          <a href="./index.html" class="header-link_page">Chocolate is loved</a>
+        </li>
+      </ul>
+      <ul class="header-list_icon">
+        <li class="header-item_icon">
+          <a href="./index.html" class="header-link_icon" target="_blank">
+            <svg class="header-icon_net" width="20" height="21">
+              <use href="/chocolate/assets/icons-5aa57417.svg#icon_insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-item_icon">
+          <a href="./index.html" class="header-link_icon" target="_blank"
+            ><svg class="header-icon_net" width="20" height="21">
+              <use href="/chocolate/assets/icons-5aa57417.svg#icon_face"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="header-item_icon">
+          <a href="./index.html" class="header-link_icon" target="_blank"
+            ><svg class="header-icon_net" width="20" height="21">
+              <use href="/chocolate/assets/icons-5aa57417.svg#icon_twit"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="button header-btn_menu" type="button" data-mobil-open>
+      <svg class="header-icon_menu" width="24" height="16">
+        <use href="/chocolate/assets/icons-5aa57417.svg#icon_menu"></use>
+      </svg>
+    </button>
+  </div>
+  </div>
+</header>
 
-    
+    <div class="menu" data-mobil>
+  <div class="menu-container">
+    <button type="submit" class="button menu-btn_close" data-mobil-close>
+      <svg class="menu-icon_close" width="28" height="28">
+        <use href="/chocolate/assets/icons-5aa57417.svg#icon-menu_close"></use>
+      </svg>
+    </button>
+    <nav class="menu-nav">
+      <ul class="menu-list_page">
+        <li class="menu-item_page">
+          <a href="./index.html" class="menu-link_page">Home</a>
+        </li>
+        <li class="menu-item_page">
+          <a href="./index.html" class="menu-link_page">How it’s made?</a>
+        </li>
+        <li class="menu-item_page">
+          <a href="./index.html" class="menu-link_page">Chocolate is loved</a>
+        </li>
+           </nav>
+      </ul>
+      <ul class="menu-list_icon">
+        <li class="menu-item_icon">
+          <a href="./index.html" class="menu-link_icon" target="_blank">
+            <svg class="menu-icon_net" width="20" height="20">
+              <use href="/chocolate/assets/icons-5aa57417.svg#icon_insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-item_icon">
+          <a href="./index.html" class="menu-link_icon" target="_blank"
+            ><svg class="menu-icon_net" width="20" height="20">
+              <use href="/chocolate/assets/icons-5aa57417.svg#icon_face"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-item_icon">
+          <a href="./index.html" class="menu-link_icon" target="_blank"
+            ><svg class="menu-icon_net" width="20" height="20">
+              <use href="/chocolate/assets/icons-5aa57417.svg#icon_twit"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+ 
+  </div>
+</div>
+
 
     <main>
-      
-      
-      
+      <section class="section promo">
+  <div class="container promo-container">
+    <h1 class="title">
+      Treat yourself or a loved one to our&nbsp;finest ingredients for a moment
+      of pure delight!
+    </h1>
+    <div class="promo-block_btn">
+      <div class="promo-box_btn">
+        <button type="button" class="button promo-btn_buy">Buy now</button>
+        <button type="button" class="button promo-btn_made">
+          How it’s made
+        </button>
+      </div>
+      <button type="button" class="button promo-btn_scroll">
+        <svg class="promo-icon_down" width="65" height="10">
+          <use href="/chocolate/assets/icons-5aa57417.svg#icon_down"></use>
+        </svg>
+        <span class="promo-text_scroll">scroll down</span>
+        <div class="promo-box_scroll">
+          <svg class="promo-icon_scroll" width="16" height="16">
+            <use href="/chocolate/assets/icons-5aa57417.svg#icon_scroll"></use>
+          </svg>
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+
+      <section class="section benefit">
+  <div class="container benefit-container">
+    <h2 class="benefit-title">Benefits</h2>
+    <ul class="benefit-list">
+      <li class="benefit-item benefit-item_taste">
+        <div class="benefit-box_icon">
+          <svg class="benefit-icon" widht="32" height="32">
+            <use href="/chocolate/assets/icons-5aa57417.svg#icon_taste"></use>
+          </svg>
+        </div>
+        <h3 class="benefit-subtitle">Unsurpassed taste</h3>
+        <p class="benefit-text_descr">
+          Crafted with the finest quality cocoa beans and a dedication to
+          perfection, each bite is a decadent experience that simply cannot be
+          matched. Savor the richness and complexity of our Unsurpassed Taste
+          and discover a new level of chocolate bliss.
+        </p>
+      </li>
+      <li class="benefit-item benefit-item_price">
+        <div class="benefit-box_icon">
+          <svg class="benefit-icon" widht="32" height="32">
+            <use href="/chocolate/assets/icons-5aa57417.svg#icon_price"></use>
+          </svg>
+        </div>
+        <h3 class="benefit-subtitle">Affordable price</h3>
+        <p class="benefit-text_descr">
+          Indulge in high-quality chocolate without breaking the bank with
+          Simply Chocolate's selection of affordable treats. Enjoy
+          mouth-watering truffles and velvety chocolate bars without sacrificing
+          taste or quality. Browse our selection and indulge in affordable
+          luxury today.
+        </p>
+      </li>
+      <li class="benefit-item benefit-item_tool">
+        <div class="benefit-box_icon">
+          <svg class="benefit-icon" widht="32" height="32">
+            <use href="/chocolate/assets/icons-5aa57417.svg#icon_tool"></use>
+          </svg>
+        </div>
+        <h3 class="benefit-subtitle">Own production</h3>
+        <p class="benefit-text_descr">
+          We take pride in our own production process, ensuring that every step
+          is carefully crafted to perfection. From selecting the finest
+          ingredients to handcrafting each piece, our attention to detail is
+          evident in every bite.
+        </p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+      <section class="section taste">
+  <div class="container taste-container">
+    <h2 class="section-title taste-title">
+      It all adds up to one exceptional
+      <span class="section-title_inside">taste</span> sensation
+    </h2>
+    <ul class="taste-list">
+      <li class="taste-item">
+        <svg class="taste-icon_arrow" width="24" height="24">
+          <use href="/chocolate/assets/icons-5aa57417.svg#icon_arrow"></use>
+        </svg>
+        <div class="taste-block_img">
+          <div class="taste-box_img">
+            <img
+              class="taste-img"
+              src="/chocolate/assets/img-1-min-30c5f5bb.png"
+              srcset="/chocolate/assets/img-1-min-30c5f5bb.png 1x, /chocolate/assets/img-1-min-30c5f5bb.png 2x"
+              alt="chocolate"
+              width="238"
+            />
+          </div>
+          <h4 class="taste-title_img">Milk chocolate</h4>
+        </div>
+        <div class="taste-overlay">
+          <h3 class="taste-overlay_subtitle">Milk chocolate</h3>
+          <div class="taste-overlay_box">
+            <p class="taste-box_text">chocolate</p>
+          </div>
+          <p class="taste-overlay_text">
+            Milk chocolate is a solid chocolate confectionery containing cocoa,
+            sugar and milk. It is the most consumed type of chocolate. Chocolate
+            was originally sold and consumed as a beverage in pre-Columbian
+            times. Although four-fifths of all milk chocolate is sold in the
+            United States and Europe.
+          </p>
+        </div>
+      </li>
+      <li class="taste-item"></li>
+      <li class="taste-item"></li>
+      <li class="taste-item"></li>
+      <li class="taste-item taste-item_no"></li>
+      <li class="taste-item taste-item_no"></li>
+      <li class="taste-item taste-item_no"></li>
+    </ul>
+  </div>
+</section>
+
+<!-- <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/team-img/1team-mob-@1x-min.jpg 1x,
+                      ./images/team-img/1team-mob-@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 1359px)"
+                    srcset="
+                      ./images/team-img/1team-tab-@1x-min.jpg 1x,
+                      ./images/team-img/1team-tab-@2x-min.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1360px)"
+                    srcset="
+                      ./images/team-img/1team-desk-@1x-min.jpg 1x,
+                      ./images/team-img/1team-desk-@2x-min.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/team-img/1team-desk-@1x-min.jpg 1x"
+                    alt="company employees"
+                  />
+                </picture> -->
+
       
       
       
@@ -27,6 +293,8 @@
     
     
 
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobilmenu.js"></script>
     
   </body>
 </html>
