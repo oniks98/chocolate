@@ -37,15 +37,6 @@
   background-color: #f9f9fd;
 }
 
-/* .taste-block_img {
-  background-color: #fd9222;
-  padding-top: 32px;
-  padding-right: 49px;
-  padding-bottom: 28px;
-  padding-left: 28px;
-  border-radius: 15px;
-} */
-
 .taste-box_img {
   margin-bottom: 16px;
 }
@@ -137,7 +128,7 @@
   height: 100%;
   /* transform: translateX(-100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  border-radius: 15px;
+  border-radius: 14px;
   /* ------rotate-------- */
   backface-visibility: hidden;
   transform: rotateY(-180deg);
@@ -180,17 +171,17 @@
   text-align: center;
 }
 
-/* скрол-крайні точки */
+/* ------скрол-крайні точки ------*/
 
 .taste-overlay::-webkit-scrollbar {
-  width: 7px;
+  width: 4px;
   background-color: #fd9222;
 }
 
 /* индикатор */
 
 .taste-overlay::-webkit-scrollbar-thumb {
-  border-radius: 7px;
+  border-radius: 4px;
   background-color: #fd9222;
 }
 
@@ -198,7 +189,7 @@
 
 .taste-overlay::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
-  border-radius: 7px;
+  border-radius: 4px;
   background-color: #f9f9fd;
 }
 

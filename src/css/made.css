@@ -4,6 +4,137 @@
 }
 
 .made-title {
-  max-width: 171px;
-  margin: 0 auto 32px;
+  margin-bottom: 32px;
+}
+
+.made-box_descr {
+  border-radius: 15px;
+  background: #fff;
+  padding: 20px 14px;
+}
+
+.made-photo {
+  margin-bottom: 20px;
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.made-item_descr {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.made-icon {
+  flex-shrink: 0;
+}
+
+.made-item_descr:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+/* --иконка через before 1 вар---
+
+.made-item_descr {
+  position: relative;
+}
+
+.made-item_descr::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  background-color: #4c4c4c;
+  border-radius: 50%;
+  border: 1px solid #eceded;
+} */
+
+/* --иконка через before 2вар НЕ раб---
+.made-item_descr {
+  position: relative;
+}
+
+.made-item_descr::before {
+  content: url('../img/icons.svg#icon-made');
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 8px;
+  height: 8px;
+  } */
+
+.made-text {
+  /* padding-left: 16px; для before */
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #111;
+}
+
+@media screen and (min-width: 768px) {
+  .made {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .made-container {
+    max-width: 614px;
+  }
+
+  .made-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .made-box_descr {
+    padding: 32px;
+  }
+
+  .made-subtitle {
+    max-width: 350px;
+    margin-bottom: 28px;
+  }
+
+  .made-box_descr {
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .made {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .made-container {
+    max-width: 1136px;
+  }
+
+  .made-block_descr {
+    display: flex;
+    gap: 20px;
+  }
+
+  .made-photo {
+    max-width: 600px;
+    margin-bottom: 0;
+  }
+
+  .made-item_descr:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .made-text {
+    max-width: 410px;
+  }
 }
