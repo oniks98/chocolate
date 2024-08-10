@@ -39,6 +39,10 @@ body {
   color: #111;
 }
 
+.section-title_inside {
+  color: #fd9222;
+}
+
 .button {
   display: block;
   border: none;
