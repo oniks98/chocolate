@@ -1,0 +1,140 @@
+.sellers {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.sellers-title {
+  margin-bottom: 32px;
+}
+
+.sellers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 537px;
+  overflow: auto;
+}
+
+.sellers-item {
+  position: relative;
+}
+
+.sellers-box_photo {
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
+}
+
+.sellers-photo {
+  transition: filter 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sellers-item:hover .sellers-photo {
+  filter: blur(15px);
+  background-image: linear-gradient(
+    161deg,
+    rgba(253, 253, 255, 0.1) 0%,
+    rgba(8, 2, 21, 0.1) 100%
+  );
+}
+
+.sellers-photo_descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fff;
+  position: absolute;
+  top: 187px;
+  left: 20px;
+  right: 20px;
+  transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  /* transform: scale(0); --уменьшение в 0 */
+  /* transform: rotateX(90deg); --поворот на90гр */
+}
+
+.sellers-item:hover .sellers-photo_descr {
+  opacity: 1;
+}
+
+/* Увеличение  */
+
+/* .sellers-item:hover .sellers-photo_descr {
+  transform: scale(1);
+} */
+
+/* Поворот в норм состояние */
+
+/* .sellers-item:hover .sellers-photo_descr {
+  transform: rotateX(0deg);
+} */
+
+.sellers-photo_title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  text-align: center;
+}
+
+.sellers-box_title {
+  padding: 24px 0px;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  background: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .sellers {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .sellers-title {
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .sellers-list {
+    flex-direction: row;
+    max-height: none;
+  }
+
+  .sellers-item {
+    min-width: 344px;
+  }
+
+  .sellers-box_title {
+    padding: 28px 0px;
+  }
+
+  .sellers-photo_descr {
+    top: 178px;
+    left: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sellers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .sellers-item {
+    min-width: none;
+  }
+
+  .sellers-box_title {
+    padding: 28px 0px;
+  }
+
+  .sellers-photo_descr {
+    top: 178px;
+    left: 32px;
+  }
+}

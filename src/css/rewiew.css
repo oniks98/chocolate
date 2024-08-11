@@ -1,0 +1,96 @@
+.rewiew {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.rewiew-title {
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.rewiew-list {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rewiew-item {
+  position: relative;
+  padding-top: 42px;
+}
+
+.rewiew-box_photo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.rewiew-box_descr {
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding: 58px 18px 42px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: #fff;
+}
+
+.rewiew-photo_descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.rewiew-photo_title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+  margin-bottom: 24px;
+}
+
+.rewiew-btn {
+  font-weight: 600;
+  color: #111;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+  width: 165px;
+  margin: 0 auto;
+  display: block;
+}
+
+.rewiew-btn:hover,
+.rewiew-btn:focus {
+  background-color: #fd9222;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .rewiew {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .rewiew-title {
+    margin-bottom: 50px;
+  }
+
+  .rewiew-list {
+    margin-bottom: 50px;
+    flex-direction: row;
+  }
+
+  .rewiew-btn {
+    border: 1px solid #fd9222;
+    border-radius: 100px;
+    padding: 14px 40px;
+    width: 222px;
+    font-size: 18px;
+  }
+}
