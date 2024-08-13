@@ -19,6 +19,12 @@ a {
   text-decoration: none;
 }
 
+/*   Додати щоб скролл був повільний */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;

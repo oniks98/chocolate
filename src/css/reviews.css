@@ -1,42 +1,61 @@
-.rewiew {
+.reviews {
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.rewiew-title {
+.reviews-title {
   margin-bottom: 32px;
   font-size: 20px;
   line-height: 1.2;
 }
 
-.rewiew-list {
+.swiper {
   margin-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
 }
 
-.rewiew-item {
+.swiper-slide {
+  max-width: 335px;
+  min-height: 242px;
   position: relative;
   padding-top: 42px;
+  overflow-y: auto;
+  cursor: pointer;
 }
 
-.rewiew-box_photo {
+.swiper-pagination-bullet {
+  color: #fff;
+  width: 13px;
+  height: 13px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fd9222;
+  width: 28px;
+  height: 13px;
+  border-radius: 13px;
+}
+
+.swiper-wrapper-slide {
+  margin-top: 50px;
+}
+
+.reviews-box_photo {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.rewiew-box_descr {
+.reviews-box_descr {
+  min-height: 222px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
-  padding: 58px 18px 42px;
+  padding: 56px 18px 42px;
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: #fff;
 }
 
-.rewiew-photo_descr {
+.reviews-photo_descr {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -45,7 +64,7 @@
   color: rgba(17, 17, 17, 0.7);
 }
 
-.rewiew-photo_title {
+.reviews-photo_title {
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33333;
@@ -54,7 +73,7 @@
   margin-bottom: 24px;
 }
 
-.rewiew-btn {
+.reviews-btn {
   font-weight: 600;
   color: #111;
   border: 1px solid #fd9222;
@@ -65,32 +84,48 @@
   display: block;
 }
 
-.rewiew-btn:hover,
-.rewiew-btn:focus {
+.reviews-btn:hover,
+.reviews-btn:focus {
   background-color: #fd9222;
   color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-  .rewiew {
+  .reviews {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  .rewiew-title {
+  .swiper {
     margin-bottom: 50px;
   }
 
-  .rewiew-list {
+  .reviews-title {
     margin-bottom: 50px;
-    flex-direction: row;
+    font-size: 24px;
+    line-height: 1.17;
   }
 
-  .rewiew-btn {
+  .swiper-slide {
+    max-width: 344px;
+  }
+
+  .reviews-btn {
     border: 1px solid #fd9222;
     border-radius: 100px;
     padding: 14px 40px;
     width: 222px;
     font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-slide {
+    max-width: 360px;
+  }
+
+  .reviews-box_descr {
+    padding-right: 24px;
+    padding-left: 24px;
   }
 }

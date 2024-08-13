@@ -10,7 +10,8 @@
 
 .taste-list {
   height: 1140px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: visible;
 }
 
 /* якщо для сторінки ::-webkit-scrollbar  */
@@ -71,40 +72,49 @@
 
 .taste-item {
   position: relative;
+  height: 270px;
   /* overflow: hidden; для transform: translateX(0%);*/
   /* ---------- rotate ------------- */
   perspective: 1000px;
   transform-style: preserve-3d;
   transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* ------------------------------ */
+  /* измен оси поворота Х справа*/
+  transform-origin: center right;
+}
+
+.taste-block_descr {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
   padding-top: 32px;
   padding-right: 49px;
   padding-bottom: 28px;
   padding-left: 28px;
-  border-radius: 15px;
   background-color: #fd9222;
+  border-radius: 15px;
 }
 
-.taste-item_milk {
+.taste-block_milk {
   background-color: #fff;
   border: 1px solid #fd9222;
 }
 
-.taste-item_semi {
+.taste-block_semi {
   background-color: #fff;
   border: 1px solid #fd9222;
 }
 
-.taste-item_raspberry {
+.taste-block_raspberry {
   background-color: #fff;
   border: 1px solid #fd9222;
 }
 
-.taste-item_nuts {
+.taste-block_nuts {
   background-color: #1e1823;
 }
 
-.taste-item_coconut {
+.taste-block_coconut {
   background-color: #1e1823;
 }
 
@@ -112,26 +122,43 @@
   margin-bottom: 20px;
 }
 
-.taste-item:hover {
-  /* transform: translateX(0%); */
-  transform: rotateY(-180deg);
-  border: #fff;
-}
-
 .taste-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
   padding: 28px;
   background-color: #fff;
   width: 100%;
   height: 100%;
+  border-radius: 14px;
+  /* ----------оверлей------- */
   /* transform: translateX(-100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-  border-radius: 14px;
   /* ------rotate-------- */
   backface-visibility: hidden;
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
+}
+
+/* hover для десктопа */
+
+/* .taste-item:hover,
+.taste-item:focus { */
+/* --------оверлей------ */
+/* transform: translateX(0%); */
+/*поворот через центр по Y */
+/* transform: rotateY(180deg); */
+/* поворот через смещенную ось Y справа  */
+/* transform: translateX(-100%) rotateY(-180deg);
+} */
+
+@media screen and (max-width: 1199px) {
+  .taste-item_a.is-flipped,
+  .taste-item_b.is-flipped,
+  .taste-item_c.is-flipped,
+  .taste-item_d.is-flipped,
+  .taste-item_e.is-flipped,
+  .taste-item_f.is-flipped,
+  .taste-item_g.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
 }
 
 .taste-overlay_title {
@@ -220,6 +247,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    overflow: visible;
   }
 
   .taste-item_chocolate {
@@ -260,6 +288,9 @@
 
   .taste-item {
     width: calc((100% - 32px * 3) / 4);
+  }
+
+  .taste-block_descr {
     padding-top: 28px;
     padding-right: 23px;
     padding-bottom: 28px;
@@ -285,5 +316,17 @@
   .taste-overlay {
     padding: 20px 15px 24px;
     overflow: auto;
+  }
+
+  /* hover для десктопа */
+
+  .taste-item:hover,
+  .taste-item:focus {
+    /* --------оверлей------ */
+    /* transform: translateX(0%); */
+    /*поворот через центр по Y */
+    /* transform: rotateY(180deg); */
+    /* поворот через смещенную ось Y справа  */
+    transform: translateX(-100%) rotateY(-180deg);
   }
 }
