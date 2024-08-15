@@ -26,3 +26,7 @@ var cardg = document.querySelector('.taste-item_g');
 cardg.addEventListener( 'click', function() {
   cardg.classList.toggle('is-flipped');
 });
+var cardj = document.querySelector('.taste-item_j');
+cardj.addEventListener( 'click', function() {
+  cardj.classList.toggle('is-flipped');
+});

@@ -11,7 +11,7 @@
 .taste-list {
   height: 1140px;
   overflow-y: auto;
-  overflow-x: visible;
+  overflow-x: hidden;
 }
 
 /* якщо для сторінки ::-webkit-scrollbar  */
@@ -118,6 +118,11 @@
   background-color: #1e1823;
 }
 
+.taste-block_vanil {
+  background-color: #fff;
+  border: 1px solid #fd9222;
+}
+
 .taste-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -156,7 +161,8 @@
   .taste-item_d.is-flipped,
   .taste-item_e.is-flipped,
   .taste-item_f.is-flipped,
-  .taste-item_g.is-flipped {
+  .taste-item_g.is-flipped,
+  .taste-item_j.is-flipped {
     transform: translateX(-100%) rotateY(-180deg);
   }
 }
