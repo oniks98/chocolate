@@ -88,7 +88,6 @@
   font-size: 13px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
-  color: #8e8f99;
   display: block;
   margin-bottom: 4px;
 }
@@ -106,9 +105,18 @@
   padding-left: 38px;
   height: 46px;
   width: 100%;
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: #111;
   background-color: transparent;
-  outline: transparent;
+  outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input::placeholder {
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
 }
 
 .modal-input:focus,
@@ -140,7 +148,7 @@ input:focus + .modal-icon {
 
 /* Откладывание уведомлений, но border уже краcный */
 
-/* input:not(:focus)::required:invalid {
+/* input:not(:focus):required:invalid {
   border-color: #f50606;
 } */
 
@@ -165,10 +173,16 @@ input:not(:placeholder-shown):required:invalid ~ .modal-icon_error {
   width: 100%;
   font-size: 13px;
   letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
+  color: #111;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.03);
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-area::placeholder {
+  font-size: 13px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
 }
 
 .modal-area:focus,
@@ -187,9 +201,9 @@ input:not(:placeholder-shown):required:invalid ~ .modal-icon_error {
 
 .modal-label_checkbox {
   font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
   display: flex;
   align-items: center;
 }
@@ -275,6 +289,12 @@ input:checked + label > .modal-icon_checkbox {
 
   .modal-title {
     margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .modal-label {
+    font-size: 14px;
   }
 
   .modal-data {
@@ -283,6 +303,8 @@ input:checked + label > .modal-icon_checkbox {
 
   .modal-input {
     height: 68px;
+    font-size: 18px;
+    line-height: 1.17;
   }
 
   .modal-area {
@@ -290,5 +312,24 @@ input:checked + label > .modal-icon_checkbox {
     padding: 22px 24px 91px 24px;
     height: 137px;
     font-size: 18px;
+  }
+
+  .modal-input::placeholder,
+  .modal-area::placeholder {
+    font-size: 18px;
+  }
+
+  .modal-checkbox {
+    margin-bottom: 40px;
+  }
+
+  .modal-button_send {
+    padding: 14px 40px;
+    min-width: 117px;
+    height: 45px;
+  }
+
+  .modal-label_checkbox {
+    font-size: 14px;
   }
 }

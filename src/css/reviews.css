@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .reviews-title {
@@ -93,7 +93,7 @@
 @media screen and (min-width: 768px) {
   .reviews {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
   }
 
   .swiper {
@@ -120,6 +120,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .reviews {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
   .swiper-slide {
     max-width: 360px;
   }

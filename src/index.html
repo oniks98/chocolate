@@ -2,8 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Simply Chocolate</title>
+    <meta
+      name="description"
+      content="Treat yourself or a loved one to our finest ingredients for a moment of pure delight!"
+    />
 
     <link
       rel="stylesheet"
@@ -29,21 +35,27 @@
   </head>
 
   <body>
-    <load ="partials/header.html" />
-    <load ="partials/menu.html" />
+    <load src="partials/header.html" />
+    <load src="partials/menu.html" />
 
     <main>
-      <load ="partials/promo.html" />
-      <load ="partials/benefit.html" />
-      <load ="partials/taste.html" />
-      <load ="partials/made.html" />
-      <load ="partials/products.html" />
-      <load ="partials/sellers.html" />
-      <load ="partials/reviews.html" />
+      <load src="partials/promo.html" />
+      <load src="partials/benefit.html" />
+      <load src="partials/taste.html" />
+      <load src="partials/made.html" />
+      <load src="partials/products.html" />
+      <load src="partials/sellers.html" />
+      <load src="partials/reviews.html" />
     </main>
 
-    <load ="partials/footer.html" />
-    <load ="partials/modal.html" />
+    <load src="partials/footer.html" />
+    <load src="partials/modal.html" />
+
+    <button class="scroll-to-top js-transparent" type="button">
+      <svg class="scroll-to-top-icon" width="26" height="26">
+        <use href="./img/icons.svg#icon-to-top"></use>
+      </svg>
+    </button>
 
     <script
       defer
@@ -54,10 +66,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/click.js"></script>
-    <script src="./js/swiper.js"></script>
-    <!-- <script type="module" src="./main.js"></script> -->
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
