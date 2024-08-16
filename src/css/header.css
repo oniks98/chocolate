@@ -83,6 +83,7 @@
 
   .header-logo_link {
     margin-right: 83px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-list_page {
@@ -103,12 +104,12 @@
     line-height: 1.14;
     letter-spacing: -0.02em;
     color: #111;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-link_page:hover,
   .header-link_page:focus {
     color: #fd9222;
-    /* text-decoration: underline; */
   }
 
   .header-logo_link:hover,
@@ -133,6 +134,7 @@
 
   .header-icon_net {
     fill: #111;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-icon_net:hover,

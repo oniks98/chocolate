@@ -1,7 +1,6 @@
 .products {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #fafafa;
 }
 
 .products-title {
@@ -60,7 +59,7 @@
   font-size: 14px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
-  padding: 8px 19px;
+  padding: 8px 18px;
   width: 95px;
   height: 33px;
   background: #fafafa;

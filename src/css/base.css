@@ -19,13 +19,28 @@ a {
   text-decoration: none;
 }
 
+/*   Додати щоб скролл був повільний */
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
+address {
+  font-style: normal;
+}
+
 .section {
   background-color: #fafafa;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 335px;
   margin: 0 auto;
 }
 
@@ -61,9 +76,11 @@ img {
   height: auto;
 }
 
-.container {
-  max-width: 335px;
-  margin: 0 auto;
+.footer-caption {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {

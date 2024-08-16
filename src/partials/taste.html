@@ -5,24 +5,37 @@
       <span class="section-title_inside">taste</span> sensation
     </h2>
     <ul class="taste-list">
-      <li class="taste-item taste-item_chocolate">
-        <svg class="taste-icon_arrow" width="24" height="24">
-          <use href="./img/icons.svg#icon_arrow"></use>
-        </svg>
-        <div class="taste-block_img">
-          <div class="taste-box_img">
-            <img
-              class="taste-img"
-              src="./img/taste/img-1-min.png"
-              srcset="
-                ./img/taste/img-1-min.png    1x,
-                ./img/taste/img-1@2x-min.png 2x
-              "
-              alt="chocolate"
-              width="238"
-            />
+      <li class="taste-item taste-item_a">
+        <div class="taste-block_descr taste-block_chocolate">
+          <svg class="taste-icon_arrow" width="24" height="24">
+            <use href="./img/icons.svg#icon_arrow"></use>
+          </svg>
+          <div class="taste-block_img">
+            <div class="taste-box_img">
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/taste/img-1-min.png    1x,
+                    ./img/taste/img-1@2x-min.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/taste/img-1desc-min.png    1x,
+                    ./img/taste/img-1desc@2x-min.png 2x
+                  "
+                />
+                <img
+                  src="./img/taste/img-1-min.png"
+                  alt="chocolate"
+                  class="taste-img"
+                />
+              </picture>
+            </div>
+            <h4 class="taste-title_img">Milk chocolate</h4>
           </div>
-          <h4 class="taste-title_img">Milk chocolate</h4>
         </div>
         <div class="taste-overlay">
           <h3 class="taste-overlay_title">Milk chocolate</h3>
@@ -37,24 +50,41 @@
           </p>
         </div>
       </li>
-      <li class="taste-item taste-item_milk">
-        <svg class="taste-icon_arrow taste-icon_arrow_o" width="24" height="24">
-          <use href="./img/icons.svg#icon_arrow"></use>
-        </svg>
-        <div class="taste-block_img taste-block_img_w">
-          <div class="taste-box_img">
-            <img
-              class="taste-img"
-              src="./img/taste/img-2-min.png"
-              srcset="
-                ./img/taste/img-2-min.png    1x,
-                ./img/taste/img-2@2x-min.png 2x
-              "
-              alt="milk"
-              width="238"
-            />
+      <li class="taste-item taste-item_b">
+        <div class="taste-block_descr taste-block_milk">
+          <svg
+            class="taste-icon_arrow taste-icon_arrow_o"
+            width="24"
+            height="24"
+          >
+            <use href="./img/icons.svg#icon_arrow"></use>
+          </svg>
+          <div class="taste-block_img taste-block_img_w">
+            <div class="taste-box_img">
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/taste/img-2-min.png    1x,
+                    ./img/taste/img-2@2x-min.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/taste/img-2desc-min.png    1x,
+                    ./img/taste/img-2desc@2x-min.png 2x
+                  "
+                />
+                <img
+                  src="./img/taste/img-2-min.png"
+                  alt="milk"
+                  class="taste-img"
+                />
+              </picture>
+            </div>
+            <h4 class="taste-title_img taste-title_img_b">Milk</h4>
           </div>
-          <h4 class="taste-title_img taste-title_img_b">Milk</h4>
         </div>
         <div class="taste-overlay">
           <h3 class="taste-overlay_title">Milk</h3>
@@ -69,24 +99,37 @@
           </p>
         </div>
       </li>
-      <li class="taste-item taste-item_nuts">
-        <svg class="taste-icon_arrow" width="24" height="24">
-          <use href="./img/icons.svg#icon_arrow"></use>
-        </svg>
-        <div class="taste-block_img taste-block_img_b">
-          <div class="taste-box_img">
-            <img
-              class="taste-img"
-              src="./img/taste/img-3-min.png"
-              srcset="
-                ./img/taste/img-3-min.png    1x,
-                ./img/taste/img-3@2x-min.png 2x
-              "
-              alt="Nuts"
-              width="238"
-            />
+      <li class="taste-item taste-item_c">
+        <div class="taste-block_descr taste-block_nuts">
+          <svg class="taste-icon_arrow" width="24" height="24">
+            <use href="./img/icons.svg#icon_arrow"></use>
+          </svg>
+          <div class="taste-block_img taste-block_img_b">
+            <div class="taste-box_img">
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/taste/img-3-min.png    1x,
+                    ./img/taste/img-3@2x-min.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/taste/img-3desc-min.png    1x,
+                    ./img/taste/img-3desc@2x-min.png 2x
+                  "
+                />
+                <img
+                  src="./img/taste/img-3-min.png"
+                  alt="nuts"
+                  class="taste-img"
+                />
+              </picture>
+            </div>
+            <h4 class="taste-title_img">Nuts</h4>
           </div>
-          <h4 class="taste-title_img">Nuts</h4>
         </div>
         <div class="taste-overlay">
           <h3 class="taste-overlay_title">Nuts</h3>
@@ -101,26 +144,43 @@
           </p>
         </div>
       </li>
-      <li class="taste-item taste-item_semi">
-        <svg class="taste-icon_arrow taste-icon_arrow_o" width="24" height="24">
-          <use href="./img/icons.svg#icon_arrow"></use>
-        </svg>
-        <div class="taste-block_img taste-block_img_w">
-          <div class="taste-box_img">
-            <img
-              class="taste-img"
-              src="./img/taste/img-4-min.png"
-              srcset="
-                ./img/taste/img-4-min.png    1x,
-                ./img/taste/img-4@2x-min.png 2x
-              "
-              alt="Semi"
-              width="238"
-            />
+      <li class="taste-item taste-item_d">
+        <div class="taste-block_descr taste-block_semi">
+          <svg
+            class="taste-icon_arrow taste-icon_arrow_o"
+            width="24"
+            height="24"
+          >
+            <use href="./img/icons.svg#icon_arrow"></use>
+          </svg>
+          <div class="taste-block_img taste-block_img_w">
+            <div class="taste-box_img">
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/taste/img-4-min.png    1x,
+                    ./img/taste/img-4@2x-min.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/taste/img-4desc-min.png    1x,
+                    ./img/taste/img-4desc@2x-min.png 2x
+                  "
+                />
+                <img
+                  src="./img/taste/img-4-min.png"
+                  alt="semi"
+                  class="taste-img"
+                />
+              </picture>
+            </div>
+            <h4 class="taste-title_img taste-title_img_b">
+              Semi - sweet chocolate
+            </h4>
           </div>
-          <h4 class="taste-title_img taste-title_img_b">
-            Semi - sweet chocolate
-          </h4>
         </div>
         <div class="taste-overlay">
           <h3 class="taste-overlay_title">Semi - sweet chocolate</h3>
@@ -135,24 +195,37 @@
           </p>
         </div>
       </li>
-      <li class="taste-item">
-        <svg class="taste-icon_arrow" width="24" height="24">
-          <use href="./img/icons.svg#icon_arrow"></use>
-        </svg>
-        <div class="taste-block_img">
-          <div class="taste-box_img">
-            <img
-              class="taste-img"
-              src="./img/taste/img-5-min.png"
-              srcset="
-                ./img/taste/img-5-min.png    1x,
-                ./img/taste/img-5@2x-min.png 2x
-              "
-              alt="CACAO"
-              width="238"
-            />
+      <li class="taste-item taste-item_e">
+        <div class="taste-block_descr">
+          <svg class="taste-icon_arrow" width="24" height="24">
+            <use href="./img/icons.svg#icon_arrow"></use>
+          </svg>
+          <div class="taste-block_img">
+            <div class="taste-box_img">
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/taste/img-5-min.png    1x,
+                    ./img/taste/img-5@2x-min.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/taste/img-5desc-min.png    1x,
+                    ./img/taste/img-5desc@2x-min.png 2x
+                  "
+                />
+                <img
+                  src="./img/taste/img-5-min.png"
+                  alt="cacao"
+                  class="taste-img"
+                />
+              </picture>
+            </div>
+            <h4 class="taste-title_img">CACAO</h4>
           </div>
-          <h4 class="taste-title_img">CACAO</h4>
         </div>
         <div class="taste-overlay">
           <h3 class="taste-overlay_title">Cacao</h3>
@@ -168,24 +241,41 @@
           </p>
         </div>
       </li>
-      <li class="taste-item taste-item_raspberry">
-        <svg class="taste-icon_arrow taste-icon_arrow_o" width="24" height="24">
-          <use href="./img/icons.svg#icon_arrow"></use>
-        </svg>
-        <div class="taste-block_img taste-block_img_w">
-          <div class="taste-box_img">
-            <img
-              class="taste-img"
-              src="./img/taste/img-6-min.png"
-              srcset="
-                ./img/taste/img-6-min.png    1x,
-                ./img/taste/img-6@2x-min.png 2x
-              "
-              alt="raspberry"
-              width="238"
-            />
+      <li class="taste-item taste-item_f">
+        <div class="taste-block_descr taste-block_raspberry">
+          <svg
+            class="taste-icon_arrow taste-icon_arrow_o"
+            width="24"
+            height="24"
+          >
+            <use href="./img/icons.svg#icon_arrow"></use>
+          </svg>
+          <div class="taste-block_img taste-block_img_w">
+            <div class="taste-box_img">
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/taste/img-6-min.png    1x,
+                    ./img/taste/img-6@2x-min.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/taste/img-6desc-min.png    1x,
+                    ./img/taste/img-6desc@2x-min.png 2x
+                  "
+                />
+                <img
+                  src="./img/taste/img-6-min.png"
+                  alt="raspberry"
+                  class="taste-img"
+                />
+              </picture>
+            </div>
+            <h4 class="taste-title_img taste-title_img_b">Raspberry</h4>
           </div>
-          <h4 class="taste-title_img taste-title_img_b">Raspberry</h4>
         </div>
         <div class="taste-overlay">
           <h3 class="taste-overlay_title">Raspberry</h3>
@@ -199,24 +289,37 @@
           </p>
         </div>
       </li>
-      <li class="taste-item taste-item_coconut">
-        <svg class="taste-icon_arrow" width="24" height="24">
-          <use href="./img/icons.svg#icon_arrow"></use>
-        </svg>
-        <div class="taste-block_img taste-block_img_b">
-          <div class="taste-box_img">
-            <img
-              class="taste-img"
-              src="./img/taste/img-7-min.png"
-              srcset="
-                ./img/taste/img-7-min.png    1x,
-                ./img/taste/img-7@2x-min.png 2x
-              "
-              alt="COCONUT OIL"
-              width="238"
-            />
+      <li class="taste-item taste-item_g">
+        <div class="taste-block_descr taste-block_coconut">
+          <svg class="taste-icon_arrow" width="24" height="24">
+            <use href="./img/icons.svg#icon_arrow"></use>
+          </svg>
+          <div class="taste-block_img taste-block_img_b">
+            <div class="taste-box_img">
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/taste/img-7-min.png    1x,
+                    ./img/taste/img-7@2x-min.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/taste/img-7desc-min.png    1x,
+                    ./img/taste/img-7desc@2x-min.png 2x
+                  "
+                />
+                <img
+                  src="./img/taste/img-7-min.png"
+                  alt="coconut"
+                  class="taste-img"
+                />
+              </picture>
+            </div>
+            <h4 class="taste-title_img">coconut oil</h4>
           </div>
-          <h4 class="taste-title_img">coconut oil</h4>
         </div>
         <div class="taste-overlay">
           <h3 class="taste-overlay_title">coconut oil</h3>
@@ -229,6 +332,51 @@
             of the use of cocoa goes back to ancient times. Already in ancient
             Mesoamerica, the Mayan and Aztec civilizations used cocoa in their
             culture and rituals
+          </p>
+        </div>
+      </li>
+      <li class="taste-item taste-item_j">
+        <div class="taste-block_descr taste-block_vanil">
+          <svg
+            class="taste-icon_arrow taste-icon_arrow_o"
+            width="24"
+            height="24"
+          >
+            <use href="./img/icons.svg#icon_arrow"></use>
+          </svg>
+          <div class="taste-block_img taste-block_img_w">
+            <div class="taste-box_img">
+              <picture>
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/taste/img-8-min.png    1x,
+                    ./img/taste/img-8@2x-min.png 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/taste/img-8desc-min.png    1x,
+                    ./img/taste/img-8desc@2x-min.png 2x
+                  "
+                />
+                <img
+                  src="./img/taste/img-8-min.png"
+                  alt="vanil"
+                  class="taste-img"
+                />
+              </picture>
+            </div>
+            <h4 class="taste-title_img taste-title_img_b">VANILLA</h4>
+          </div>
+        </div>
+        <div class="taste-overlay">
+          <h3 class="taste-overlay_title">VANILLA</h3>
+          <p class="taste-overlay_subtitle">vanilla</p>
+          <p class="taste-overlay_subtitle_next">benefits</p>
+          <p class="taste-overlay_text">
+            Vanilla is one of the most popular flavorings and seasonings in the world. It is obtained from the fruits of the tropical orchid Vanilla planifolia. Vanilla has a rich history of use as a seasoning, perfume component, and raw material for the production of confectionery.
           </p>
         </div>
       </li>
